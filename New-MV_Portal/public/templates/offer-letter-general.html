@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Offer Letter</title>
+
+    <style>
+        .ol-wrapper {
+            font-family: Tahoma, Verdana, Segoe, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .ol-page {
+            width: 100%;
+            max-width: 800px;
+            background: #ffffff;
+            padding: 72px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .ol-text {
+            font-size: 11pt;
+            margin: 6px 0;
+            line-height: 1.15;
+            text-align: left;
+        }
+
+        .ol-right {
+            text-align: right;
+        }
+
+        .ol-center {
+            text-align: center;
+        }
+
+        .ol-title {
+            font-size: 13pt;
+            font-weight: bold;
+        }
+
+        .ol-highlight {
+            font-weight: bold;
+        }
+
+        .ol-list {
+            margin-left: 36px;
+            margin-top: 6px;
+        }
+
+        .ol-list-item {
+            font-size: 11pt;
+            margin: 6px 0;
+            line-height: 1.15;
+        }
+
+        .ol-indent {
+            margin-left: 72px;
+        }
+
+        .ol-spacer {
+            height: 12px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .ol-wrapper {
+                padding: 32px;
+            }
+
+            .ol-page {
+                padding: 48px;
+            }
+        }
+
+        /* Print */
+        @media print {
+            .ol-wrapper {
+                background: none;
+                padding: 0;
+            }
+
+            .ol-page {
+                border: none;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<div class="ol-wrapper">
+    <div class="ol-page">
+
+        <div class="ol-text ol-right">
+            Register No.: {{Register_Number}}
+        </div>
+
+        <div class="ol-text ol-center ol-title">
+            Offer Letter
+        </div>
+
+        <div class="ol-text">
+            Date: {{Date}}
+        </div>
+
+        <div class="ol-text">
+            Dear <span class="ol-highlight">{{Name}}</span>,
+        </div>
+
+        <div class="ol-text">
+            Congratulations and welcome to MV Clouds Pvt Ltd. We are pleased to offer and
+            appoint you to the role of {{Employee_Title__c}}. You will be required to join MV Clouds
+            from {{joining_date}}. We hope we have a long journey
+            and grow together.
+        </div>
+
+        <div class="ol-text">
+            Listed below are some terms and conditions to be met for your onboarding. If any
+            terms and conditions are not met, then the offer made to you will not be valid.
+        </div>
+
+        <div class="ol-list">
+            <div class="ol-list-item">
+                1. You will be on a contract period for the first 6 months. You will be confirmed
+                as an employee post the duration of 6 months based on your performance.
+            </div>
+
+            <div class="ol-list-item">
+                2. As an employee, your notice period for resignation will be 90 days. Failure to
+                do so will be dealt with on a case by case basis.
+            </div>
+
+            <div class="ol-list-item">
+                3. By signing this offer letter, you confirm that all details provided by you to
+                the Company in your resume and/or communicated otherwise are correct.
+            </div>
+
+            <div class="ol-list-item">
+                4. You will have to provide relevant supporting documents (salary slips,
+                experience letter, certificates, etc.) as evidence for the information shared
+                by you while joining the Company.
+            </div>
+
+            <div class="ol-list-item">
+                5. Your fixed salary will be Rs. {{salary_per_month}} /- per month.
+            </div>
+
+            <div class="ol-list-item">
+                6. Your annual CTC will be Rs. {{CTC}} /-.
+            </div>
+
+            <div class="ol-list-item">
+                7. You will have to bring the following documents upon joining the Company:
+            </div>
+        </div>
+
+        <div class="ol-list ol-indent">
+            <div class="ol-list-item">
+                1. Originals and photocopies of all certificates &amp; mark sheets in support of
+                your experience, education, qualifications, identity, and age.
+            </div>
+
+            <div class="ol-list-item">
+                2. Original and photocopy of Permanent Account Number (PAN), Aadhar, Passport,
+                and Salary certificates/slips.
+            </div>
+
+            <div class="ol-list-item">
+                3. 2 latest passport-size photographs.
+            </div>
+
+            <div class="ol-list-item">
+                4. Any other related documents as in point 4.
+            </div>
+        </div>
+
+        <div class="ol-text">
+            For any further clarifications or discussions, please feel free to contact us.
+        </div>
+
+        <div class="ol-text">
+            Regards,
+        </div>
+
+        <div class="ol-text">
+            Dharmik Shah
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Employee
+            <br>
+            <span class="ol-highlight">CEO and Co-founder</span>,
+            <span class="ol-highlight">MV Clouds Pvt. Ltd.</span>
+        </div>
+
+    </div>
+</div>
+</html>
