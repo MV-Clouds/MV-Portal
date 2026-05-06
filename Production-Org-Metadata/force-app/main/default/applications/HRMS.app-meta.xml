@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#7922EA</headerColor>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>HRMS</label>
+    <navType>Standard</navType>
+    <tabs>Employee__c</tabs>
+    <tabs>Bank_Detail__c</tabs>
+    <tabs>Leave__c</tabs>
+    <tabs>Leave_Balance__c</tabs>
+    <tabs>Payroll__c</tabs>
+    <tabs>Payroll_Summary__c</tabs>
+    <tabs>AMS_Asset_Assignment_History__c</tabs>
+    <tabs>MVC_Internal_Asset__c</tabs>
+    <tabs>MV_Notification__c</tabs>
+    <tabs>Salary_History_Tracking__c</tabs>
+    <tabs>Document__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>HRMS_UtilityBar</utilityBar>
+</CustomApplication>

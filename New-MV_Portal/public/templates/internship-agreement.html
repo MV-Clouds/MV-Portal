@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NDA - {{Name}}</title>
+
+    <style>
+      .nda-wrapper {
+        font-family: Tahoma, Verdana, Segoe, sans-serif;
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        padding: 16px;
+        color: #111;
+      }
+
+      .nda-page {
+        background: #ffffff;
+        width: 100%;
+        max-width: 794px;
+        min-height: 1123px;
+        padding: 64px;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+      }
+
+      .nda-header {
+        text-align: right;
+        font-weight: 600;
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+
+      .nda-title {
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+        text-decoration: underline;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+      }
+
+      .nda-text {
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: justify;
+        margin-bottom: 16px;
+      }
+
+      .nda-text strong {
+        font-weight: 600;
+      }
+
+      .nda-clause {
+        font-size: 13.5px;
+        line-height: 1.6;
+        text-align: justify;
+        margin-bottom: 16px;
+      }
+
+      .nda-clause-title {
+        font-weight: 600;
+      }
+
+      .nda-signatures {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        margin-top: 64px;
+        flex-wrap: wrap;
+      }
+
+      .nda-sign-box {
+        width: 220px;
+      }
+
+      .nda-sign-line {
+        border-top: 1px solid #000;
+        margin-top: 48px;
+        margin-bottom: 6px;
+      }
+
+      .nda-sign-name {
+        font-weight: 600;
+      }
+
+      .nda-sign-title {
+        font-size: 13px;
+      }
+
+      @media (max-width: 768px) {
+        .nda-page {
+          padding: 48px;
+        }
+        .nda-title {
+          font-size: 18px;
+        }
+        .nda-signatures {
+          flex-direction: column;
+        }
+      }
+
+      @media print {
+        .nda-wrapper {
+          background: none;
+          padding: 0;
+        }
+        .nda-page {
+          box-shadow: none;
+          max-width: 100%;
+          min-height: auto;
+        }
+        .nda-actions {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <div class="nda-wrapper">
+    <div class="nda-page">
+
+      <div class="nda-header">
+        Register No.: {{Register_Number}}
+      </div>
+
+      <div class="nda-title">Non-Disclosure Agreement</div>
+
+      <div class="nda-text">
+        This Agreement is effective when signed by and between
+        <strong>MV Clouds Privited Limited</strong>, having its registered office at,
+        D-404, The First Synthesis, B/H Keshav Baug Party Plot, Shivalik High-Street, Ahmedabad, Gujarat 380015 and
+      </div>
+
+      <div class="nda-text">
+        <strong>{{Name}}</strong>, (hereinafter referred as the Intern),
+        S/o. {{Father_Name}}, residing at {{Employee_Address}} collectively
+        referred to as the “Parties”.
+      </div>
+
+      <div class="nda-text">
+        The Company has recruited {{Name}} as an employee since
+        {{Joining_Date__c}} and this agreement is intended to protect the
+        confidential information disclosed by the Company in the employment to
+        <strong>{{Employee_Name__c}}</strong>.
+      </div>
+
+      <div class="nda-clause">
+        <span class="nda-clause-title">1. Confidential Information:</span>
+        The Parties agree that information disclosed orally or in writing or made
+        available by the Company (Finerr) to another Party (Intern), including,
+        but not limited to, information acquired from employees; trade secrets;
+        strategic plans; invention plans and disclosures; customer information;
+        computer programs; software codes; databases; suppliers; software;
+        distribution channels; marketing studies; intellectual property;
+        information relating to process and products, designs, business plans,
+        business opportunities, marketing plans, finances, research,
+        development, know-how or personnel; confidential information originally
+        received from third parties; information relating to any type of
+        technology, and all other material, whether written or oral, tangible or
+        intangible, shall be deemed “Confidential Information”. In addition, the
+        existence and terms of this Agreement shall also be treated as
+        Confidential Information. The parties agree that any Confidential
+        Information disclosed prior to the execution of this Agreement during
+        the course of employment was intended to be and shall be subject to the
+        terms and conditions of this Agreement.
+      </div>
+
+      <div class="nda-clause">
+        <span class="nda-clause-title">2. Restrictions and Exceptions:</span>
+        The employee agrees to maintain the confidentiality of the Confidential
+        Information and to prevent its unauthorized dissemination or use for a
+        period of two (2) years from the date of last disclosure by the Company.
+      </div>
+
+      <div class="nda-clause">
+        <span class="nda-clause-title">3. Non-Disclosure:</span>
+        The employee expressly agrees that he/she shall not use Confidential
+        Information provided by the Company in the development or delivery or
+        for personal gain from providing any products or services for his/her
+        own account or for the account of any third party. The employee shall
+        protect the Confidential Information by using the same degree of care,
+        but no less than reasonable care, to prevent the unauthorized use,
+        dissemination or publication of the Confidential Information as the
+        employee uses to protect its own Confidential Information. The employee
+        shall limit its internal disclosure of the Confidential Information to
+        only those employees and agents who have a need to know the information
+        for the limited purpose of executing his/her job responsibility.
+      </div>
+
+      <div class="nda-clause">
+        <span class="nda-clause-title">4. Ownership of Confidential Information:</span>
+        All Confidential Information, and all material items delivered by the
+        Company to the employee, remains the property of the Company and no
+        license or other rights in the Confidential Information are granted to
+        the employee by this Agreement or by the act of disclosure.
+      </div>
+
+      <div class="nda-clause">
+        <span class="nda-clause-title">5. Return of materials and documents:</span>
+        Upon the request of the Company, the employee shall return to it (or, at
+        the request of the Company, erase or destroy) all materials that contain
+        or embody any Confidential Information of the Company. Return or
+        destruction of such material shall not relieve the employee of its
+        obligations of confidentiality. Upon the request of the Company, the
+        employee will certify that they have complied with the provisions of
+        this paragraph.
+      </div>
+
+      <div class="nda-clause">
+        <span class="nda-clause-title">6. Non-Circumvention:</span>
+        The employee agrees to not circumvent the Company and work with business
+        associates, clients, and other third party vendors introduced by the
+        Company. This non-circumvention provision shall expire at the end of two
+        (2) years from the termination of this Agreement.
+      </div>
+
+      <div class="nda-clause">
+        <span class="nda-clause-title">7. Non-Solicitation:</span>
+        For a period of this Agreement, the employee agrees that he/she will not
+        solicit for work, or provide service or advice or assist others with the
+        opportunity to do the same, any Client or any Company.
+      </div>
+
+      <div class="nda-clause">
+        <span class="nda-clause-title">8. No Tampering:</span>
+        While employee is employed by the Company and for two years following
+        the termination of employment with the Company, the employee shall not
+        request, induce, or attempt to influence suppliers, customers, or
+        employees of the Company to curtail or cancel business relationships.
+      </div>
+
+      <div class="nda-clause">
+        <span class="nda-clause-title">9. Remedy:</span>
+        The employee acknowledges that unauthorized disclosure or use of
+        Confidential Information is a fraud and may cause irreparable harm.
+        Accordingly, the Company shall have the right to seek injunctive relief
+        and damages.
+      </div>
+
+      <div class="nda-clause">
+        <span class="nda-clause-title">10. Termination:</span>
+        This Agreement shall survive and remain in effect until expressly
+        terminated in writing and signed by all Parties.
+      </div>
+
+      <div class="nda-clause">
+        <span class="nda-clause-title">11. General:</span>
+        This Agreement constitutes the entire agreement and supersedes all prior
+        agreements. If any provision is held invalid, remaining provisions
+        shall remain effective.
+      </div>
+
+      <div class="nda-clause">
+        The employee acknowledges that the Company may rely on this agreement to
+        provide access to trade secrets and confidential information, which must
+        not be disclosed or misused.
+      </div>
+
+      <div class="nda-signatures">
+        <div class="nda-sign-box">
+          <div class="nda-sign-line"></div>
+          <div class="nda-sign-name">Dharmik Shah</div>
+          <div class="nda-sign-title">{{Company_Name}}</div>
+        </div>
+
+        <div class="nda-sign-box">
+          <div class="nda-sign-line"></div>
+          <div class="nda-sign-name">{{Employee_Name__c}}</div>
+          <div class="nda-sign-title">Employee</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</html>

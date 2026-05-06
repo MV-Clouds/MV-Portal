@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Document_Category__c</fullName>
+    <label>Document Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Intern Docs</fullName>
+                <default>false</default>
+                <label>Intern Docs</label>
+            </value>
+            <value>
+                <fullName>Fresher Docs</fullName>
+                <default>false</default>
+                <label>Fresher Docs</label>
+            </value>
+            <value>
+                <fullName>Experience Docs</fullName>
+                <default>false</default>
+                <label>Experience Docs</label>
+            </value>
+            <value>
+                <fullName>Personal</fullName>
+                <default>false</default>
+                <label>Personal</label>
+            </value>
+            <value>
+                <fullName>Handbook</fullName>
+                <default>false</default>
+                <label>Handbook</label>
+            </value>
+            <value>
+                <fullName>Payslip</fullName>
+                <default>false</default>
+                <label>Payslip</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

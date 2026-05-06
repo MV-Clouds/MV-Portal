@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Asset Management Letter - {{Name}}</title>
+
+        <style>
+            .aml-wrapper {
+                font-family: Tahoma, Verdana, Segoe, sans-serif;
+                background: #f2f4f7;
+                margin: 0;
+                padding: 18px;
+                display: flex;
+                justify-content: center;
+                color: #111;
+            }
+
+            .aml-page {
+                width: 100%;
+                max-width: 794px;
+                min-height: 1123px;
+                background: #fff;
+                position: relative;
+                overflow: hidden;
+                padding: 56px;
+                box-sizing: border-box;
+                box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
+            }
+
+            .aml-watermark {
+                position: absolute;
+                top: 26%;
+                left: 50%;
+                transform: translateX(-50%);
+                opacity: 0.1;
+                width: min(520px, 80%);
+                pointer-events: none;
+                user-select: none;
+                z-index: 1;
+            }
+
+            .aml-content {
+                position: relative;
+                z-index: 2;
+            }
+
+            .aml-top {
+                text-align: right;
+                font-size: 13px;
+                margin-bottom: 24px;
+            }
+
+            .aml-recipient {
+                margin-bottom: 18px;
+                font-size: 14px;
+                line-height: 1.55;
+            }
+
+            .aml-subject {
+                margin: 28px 0 18px;
+                text-align: center;
+                font-size: 15px;
+                line-height: 1.6;
+            }
+
+            .aml-subject-title {
+                font-weight: 700;
+            }
+
+            .aml-salutation {
+                margin: 0 0 16px;
+                font-size: 14px;
+            }
+
+            .aml-body {
+                margin: 0;
+                text-align: justify;
+                font-size: 14px;
+                line-height: 1.8;
+            }
+
+            .aml-signature {
+                margin-top: 72px;
+                line-height: 1.8;
+                font-size: 14px;
+            }
+
+            .aml-signature-name {
+                font-weight: 700;
+            }
+
+            @media (max-width: 768px) {
+                .aml-wrapper {
+                    padding: 12px;
+                }
+
+                .aml-page {
+                    padding: 36px;
+                    min-height: auto;
+                }
+            }
+
+            @media print {
+                .aml-wrapper {
+                    background: none;
+                    padding: 0;
+                }
+
+                .aml-page {
+                    max-width: 100%;
+                    min-height: auto;
+                    box-shadow: none;
+                    padding: 40px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="aml-wrapper">
+            <div class="aml-page">
+                <img
+                    src="https://qftestv.s3.us-east-1.amazonaws.com/MV+CLouds+Logo01.png"
+                    class="aml-watermark"
+                    alt="MV Clouds"
+                />
+
+                <div class="aml-content">
+                    <div class="aml-top">Date: {{Date}}</div>
+
+                    <div class="aml-recipient">
+                        To,<br />
+                        MV Clouds Private Limited
+                    </div>
+
+                    <div class="aml-subject">
+                        <div class="aml-subject-title">Subject: Taking Responsibility for Laptop</div>
+                        <div>Model (Serial Number - {{Model Number}})</div>
+                    </div>
+
+                    <p class="aml-salutation">Respected Sir/Madam,</p>
+
+                    <p class="aml-body">
+                        This is to bring to your attention that I am <strong>{{Name}}</strong>. I hereby accept responsibility for the company laptop issued to me on {{Date}} for work purposes. If there is any physical/liquid damage, then I will be responsible for that, and all repair expenses will be deducted from my salary. I wholeheartedly take responsibility for the laptop and promise to keep it safe in my custody.
+                    </p>
+
+                    <div class="aml-signature">
+                        Sincerely,<br />
+                        <span class="aml-signature-name">{{Name}}</span><br />
+                        MV Clouds Private Limited
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

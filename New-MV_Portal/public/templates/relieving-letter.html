@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Relieving Letter</title>
+
+  <style>
+    .rl-wrapper {
+      font-family: Tahoma, Verdana, Segoe, sans-serif;
+      font-size: 11pt;
+      color: #000;
+      background: #ffffff;
+      padding: 72px;
+      line-height: 1.4;
+      box-sizing: border-box;
+    }
+
+    .rl-text {
+      margin: 10px 0;
+      text-align: justify;
+    }
+
+    .rl-right {
+      text-align: right;
+    }
+
+    .rl-center {
+      text-align: center;
+    }
+
+    .rl-bold {
+      font-weight: 700;
+    }
+
+    .rl-underline {
+      text-decoration: underline;
+    }
+
+    .rl-title {
+      font-size: 16pt;
+      margin: 20px 0 10px;
+    }
+
+    .rl-section-title {
+      font-weight: 700;
+      text-decoration: underline;
+      margin-top: 15px;
+    }
+
+    .rl-list {
+      margin-left: 30px;
+    }
+
+    .rl-list-item {
+      margin-bottom: 10px;
+    }
+
+    .rl-table {
+      width: 100%;
+      margin-top: 20px;
+      border: 1px solid #000;
+      box-sizing: border-box;
+    }
+
+    .rl-row {
+      border-bottom: 1px solid #000;
+      padding: 8px;
+    }
+
+    .rl-row:last-child {
+      border-bottom: none;
+    }
+
+    .rl-signature {
+      margin-top: 30px;
+    }
+
+    .rl-spacer {
+      height: 10px;
+    }
+
+    @media print {
+      .rl-wrapper {
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+
+<div class="rl-wrapper">
+
+  <div class="rl-text rl-right">
+    Register_Number
+  </div>
+
+  <div class="rl-text rl-center rl-bold rl-title">
+    Personal and Confidential
+  </div>
+
+  <div class="rl-text">
+    {{Employee_Address}}
+  </div>
+
+  <div class="rl-text">
+    Date:
+  </div>
+
+  <div class="rl-text rl-bold">
+    RE: Relieving of Employment of <span class="rl-bold">{{Employee_Name__c}}</span>
+  </div>
+
+  <div class="rl-text">
+    Dear <span class="rl-bold">{{Employee_Name__c}}</span>,
+  </div>
+
+  <div class="rl-text">
+    I write on behalf of MV Clouds Private Limited ("the Company" or "MV Clouds")
+    to confirm the Company's decision to relieve your employment.
+  </div>
+
+  <div class="rl-text">
+    Your last day of service with the Company will be
+    <span class="rl-bold">{{Seperation_Date__c}}</span>.
+  </div>
+
+  <div class="rl-section-title">Expense Reimbursement</div>
+
+  <div class="rl-text">
+    Provided you submit any expense reports and receipts within 15 days of the
+    Relieving Date, you will be reimbursed for any expenses incurred by you in
+    the performance of your duties up to the Relieving Date within 15 days of
+    the Company receiving the approved expense reports with the receipts.
+  </div>
+
+  <div class="rl-section-title">Company Property (including Work Product)</div>
+
+  <div class="rl-text">
+    All Company equipment including, but not limited to, computers and peripherals,
+    etc. as well as all Company property and work product must be returned to
+    MV Clouds no later than <span class="rl-bold">{{Seperation_Date__c}}</span> to:
+  </div>
+
+  <div class="rl-text">
+    Human Resources
+  </div>
+  <div class="rl-text">MV Clouds Private Limited</div>
+  <div class="rl-text">D-404, Fourth Floor, The First Synthesis,</div>
+  <div class="rl-text">Behind Keshav Baugh Party Plot,</div>
+  <div class="rl-text">Ahmedabad, Gujarat – 380015, India</div>
+
+  <div class="rl-text">
+    “Property” includes, but is not limited to:
+  </div>
+
+  <div class="rl-list">
+    <div class="rl-list-item">
+      Internal memoranda, computer equipment (including software), training
+      materials, books, and all other like property including copies containing
+      Confidential Information or Intellectual Property.
+    </div>
+
+    <div class="rl-list-item">
+      Papers, drawings, pen drives, laptops, keys, ID cards, customer lists,
+      recordings, documents, prototypes, and models belonging to the Company.
+    </div>
+
+    <div class="rl-list-item">
+      Any tangible expression of Confidential Information including photographs,
+      plans, notes, computer programs, and samples.
+    </div>
+  </div>
+
+  <div class="rl-text">
+    “Work Product” means intellectual property created or developed by the
+    employee during employment using company resources or confidential information.
+  </div>
+
+  <div class="rl-section-title">Email</div>
+
+  <div class="rl-text">
+    To protect all company confidential and proprietary information, your email
+    will be deactivated as of <span class="rl-bold">{{Seperation_Date__c}}</span>.
+  </div>
+
+  <div class="rl-section-title">Confidentiality and Non-Disparagement Obligations</div>
+
+  <div class="rl-text">
+    Your confidentiality obligations towards MV Clouds remain intact even after
+    you exit the organization. Confidential information must not be shared with
+    any third party or retained on personal devices.
+  </div>
+
+  <div class="rl-text">
+    You shall not take any action that could reasonably be expected to adversely
+    affect the reputation of the Company or its affiliates.
+  </div>
+
+  <div class="rl-section-title">References</div>
+
+  <div class="rl-text">
+    It is the Company's reference policy to provide only dates of employment
+    and last position held unless written authorization is provided.
+  </div>
+
+  <div class="rl-text">Sincerely,</div>
+
+  <div class="rl-text rl-bold">Dharmik Shah</div>
+
+  <div class="rl-section-title">Employee Acknowledgement</div>
+
+  <div class="rl-text">
+    I have read and understood the content of this letter and confirm that I do
+    not retain any confidential information belonging to MV Clouds. I understand
+    my obligations and acknowledge that legal action may be taken in case of
+    violation.
+  </div>
+
+  <div class="rl-table">
+    <div class="rl-row rl-bold rl-center">
+      Personal Information as on the Last Day of Employment
+    </div>
+    <div class="rl-row">
+      Employee ID: <span class="rl-bold">{{Employee_ID__c}}</span>
+    </div>
+    <div class="rl-row">
+      Duration of Employment: <span class="rl-bold">{{Employment_Duration__c}}</span>
+    </div>
+    <div class="rl-row">
+      Ending Job Title: <span class="rl-bold">{{Employee_Title__c}}</span>
+    </div>
+    <div class="rl-row">
+      Personal Email: <span class="rl-bold">{{Email}}</span>
+    </div>
+    <div class="rl-row">
+      Mailing Address: <span class="rl-bold">{{Employee_Address}}</span>
+    </div>
+    <div class="rl-row">
+      Mobile Phone: <span class="rl-bold">{{Phone}}</span>
+    </div>
+  </div>
+
+  <div class="rl-signature">
+    <div class="rl-text">
+      Employee Signature: _________________________________
+    </div>
+    <div class="rl-text">
+      Date: _________________________________
+    </div>
+  </div>
+
+</div>
+</html>

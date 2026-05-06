@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employment & Salary Verification Letter</title>
+
+    <style>
+        .esv-wrapper {
+            font-family: Tahoma, Verdana, Segoe, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        .esv-page {
+            width: 100%;
+            max-width: 800px;
+            background: #ffffff;
+            padding: 70px;
+            box-sizing: border-box;
+        }
+
+        .esv-text {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .esv-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        .esv-center {
+            text-align: center;
+        }
+
+        .esv-title {
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: underline;
+            margin: 40px 0;
+        }
+
+        .esv-bold {
+            font-weight: bold;
+        }
+
+        .esv-table {
+            width: 100%;
+            margin: 30px 0;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+
+        .esv-row {
+            display: flex;
+            border-bottom: 1px solid #000;
+        }
+
+        .esv-row:last-child {
+            border-bottom: none;
+        }
+
+        .esv-cell {
+            flex: 1;
+            padding: 10px;
+            font-size: 14px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .esv-cell + .esv-cell {
+            border-left: 1px solid #000;
+        }
+
+        .esv-signature {
+            margin-top: 50px;
+        }
+
+        @media print {
+            .esv-wrapper {
+                background: none;
+                padding: 0;
+            }
+
+            .esv-page {
+                border: none;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<div class="esv-wrapper">
+    <div class="esv-page">
+
+        <div class="esv-header">
+            <div>Date:</div>
+            <div>Register No.:</div>
+        </div>
+
+        <div class="esv-center esv-title">
+            To Whom It May Concern
+        </div>
+
+        <div class="esv-text">
+            This letter confirms that
+            <span class="esv-bold">{{Name}}</span>
+            is employed at
+            <span class="esv-bold">MV Clouds Private Limited</span>
+            as a full-time
+            <span class="esv-bold">Salesforce Developer</span>.
+            He has been a dedicated and valued member of our team.
+        </div>
+
+        <div class="esv-text">
+            For verification purposes, we hereby provide the details of his salary for
+            the last six months as follows:
+        </div>
+
+        <div class="esv-table">
+            <div class="esv-row esv-bold">
+                <div class="esv-cell">Month</div>
+                <div class="esv-cell">Salary</div>
+            </div>
+
+            <div class="esv-row">
+                <div class="esv-cell"></div>
+                <div class="esv-cell"></div>
+            </div>
+            <div class="esv-row">
+                <div class="esv-cell"></div>
+                <div class="esv-cell"></div>
+            </div>
+            <div class="esv-row">
+                <div class="esv-cell"></div>
+                <div class="esv-cell"></div>
+            </div>
+            <div class="esv-row">
+                <div class="esv-cell"></div>
+                <div class="esv-cell"></div>
+            </div>
+            <div class="esv-row">
+                <div class="esv-cell"></div>
+                <div class="esv-cell"></div>
+            </div>
+            <div class="esv-row">
+                <div class="esv-cell"></div>
+                <div class="esv-cell"></div>
+            </div>
+        </div>
+
+        <div class="esv-signature">
+            <div class="esv-text">Sincerely,</div>
+
+            <div class="esv-text esv-bold">
+                Dharmik Shah
+            </div>
+
+            <div class="esv-text">
+                MV Clouds Private Limited
+            </div>
+        </div>
+
+    </div>
+</div>
+</html>
