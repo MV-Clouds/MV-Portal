@@ -766,6 +766,39 @@
         <field>Salary_History_Tracking__c.Security_Deposite__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <layoutAssignments>
+        <layout>AMS_Asset_Assignment_History__c-AMS Asset Assignment History Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Bank_Detail__c-Bank Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Document__c-Document Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Employee__c-Employee Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Leave_Balance__c-Leave Balance Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Leave__c-Leave Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MVC_Internal_Asset__c-MVC Internal Asset Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MV_Notification__c-MV Notification Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Payroll_Summary__c-Payroll Summary Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Payroll__c-Payroll Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Salary_History_Tracking__c-Salary History Tracking Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
