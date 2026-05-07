@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
+		<members>EmployeeRestService</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
 		<members>HRMS</members>
 		<name>CustomApplication</name>
 	</types>
@@ -34,6 +38,18 @@
 		<name>CustomTab</name>
 	</types>
 	<types>
+		<members>Salesforce_Connect_glbloauth</members>
+		<name>ExtlClntAppGlobalOauthSettings</name>
+	</types>
+	<types>
+		<members>Salesforce_Connect_oauthPlcy</members>
+		<name>ExtlClntAppOauthConfigurablePolicies</name>
+	</types>
+	<types>
+		<members>Salesforce_Connect_oauth</members>
+		<name>ExtlClntAppOauthSettings</name>
+	</types>
+	<types>
 		<members>AMS_Asset_Assignment_History_Record_Page</members>
 		<members>Bank_Detail_Record_Page</members>
 		<members>Employee_Record_Page</members>
@@ -43,6 +59,20 @@
 		<members>Payroll_Record_Page</members>
 		<members>Payroll_Summary_Record_Page</members>
 		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>AMS_Asset_Assignment_History__c-AMS Asset Assignment History Layout</members>
+		<members>Bank_Detail__c-Bank Detail Layout</members>
+		<members>Document__c-Document Layout</members>
+		<members>Employee__c-Employee Layout</members>
+		<members>Leave_Balance__c-Leave Balance Layout</members>
+		<members>Leave__c-Leave Layout</members>
+		<members>MVC_Internal_Asset__c-MVC Internal Asset Layout</members>
+		<members>MV_Notification__c-MV Notification Layout</members>
+		<members>Payroll_Summary__c-Payroll Summary Layout</members>
+		<members>Payroll__c-Payroll Layout</members>
+		<members>Salary_History_Tracking__c-Salary History Tracking Layout</members>
+		<name>Layout</name>
 	</types>
 	<types>
 		<members>AMS_Asset_Assignment_History__c.All</members>
@@ -57,6 +87,10 @@
 		<members>Payroll__c.All</members>
 		<members>Salary_History_Tracking__c.All</members>
 		<name>ListView</name>
+	</types>
+	<types>
+		<members>Admin</members>
+		<name>Profile</name>
 	</types>
 	<version>66.0</version>
 </Package>
